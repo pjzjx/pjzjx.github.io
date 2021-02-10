@@ -303,7 +303,8 @@
         
           
             <p>这是一篇测试文章.</p>
-
+<p>来试试数学公式吧,</p>
+<script type="math/tex; mode=display">f(t,X_t)=f(0,X_0)+\int_0^t(f_t(s,X_s)+f_x(s,X_s)Y_s+{1\over 2}f_{xx}(s,X_s)Z_s^2){\mathop{}\!\mathrm{d}}s+\int_0^tf_x(s,X_s)Z_s{\mathop{}\!\mathrm{d}}W_s.</script>
           
         
       
@@ -729,6 +730,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
